@@ -16,8 +16,8 @@ h1 {
 }
       
 .herodiv {
-  margin: 1110px auto;
-  /* position: relative; If removed, what happens? */
+  margin: 10px auto;
+  position: ; /* If removed, what happens? */
 }
       
 .herodiv img {
@@ -27,7 +27,7 @@ h1 {
 }
       
 .stats {
-  position: auto;
+  position: absolute;
   bottom: 25px;
   left: 15px;
   background: radial-gradient(#eee, #323A06);
@@ -44,7 +44,7 @@ h2 {
 }
       
 footer {
-  position: relative;
+  position: fixed;
   bottom: 0;
   margin: 1rem;
   border-top: 1px solid #000;
