@@ -97,3 +97,7 @@ footer {
     background-color: var(--light-bg);
     color: var(--dark-text);
 }
+
+.indent {
+    padding-left: 2rem;
+}
