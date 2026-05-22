@@ -54,7 +54,7 @@ nav, p, section , article {
     position: absolute;
     top: 20px;
     width: 100%;
-    padding: 16x;
+    padding: 16px;
     text-align: center;
     opacity: 0.9;
     background-color: var(--accent1);
