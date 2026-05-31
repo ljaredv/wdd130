@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: var(--body-font);
+    font-family: var(--accent2);
     color: var(--text-color);
 }
 
