@@ -269,7 +269,6 @@ footer {
     box-sizing: border-box;
 }
 
-/* Radio buttons & Fieldset design styling */
 .form-fieldset {
     border: none;
     padding: 0;
@@ -306,7 +305,6 @@ footer {
 /* Accessible and Visually Distinguishable Submit Button */
 .submit-btn {
     background-color: #e0e0e0;
-    /* Matches wireframe gray; customize color value for final palette */
     color: #333;
     border: 1px solid #999;
     padding: 12px 20px;
@@ -380,4 +378,250 @@ footer {
 .employee-profile figcaption span {
     color: #666;
     font-style: italic;
+}
+
+/* ==========================================================================
+   Trips Page Specific Layout Additions
+   ========================================================================== */
+
+.trips-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Page Hero Section */
+.trips-hero {
+    background-color: #e3d7ff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-rafting.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.hero-overlay h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+}
+
+/* Call to Action Button styling */
+.cta-button {
+    display: inline-block;
+    background-color: #ff7a00;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cta-button:hover {
+    background-color: #e06c00;
+}
+
+.cta-button:active {
+    transform: translateY(2px);
+}
+
+/* Detailed Trip Sections - Non-Linear Card Layout */
+.trip-showcase {
+    margin-bottom: 50px;
+}
+
+.trip-showcase h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.trip-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.trip-card {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 340px;
+    /* Adapts dynamically from multi-column rows to single rows on narrow viewports */
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.trip-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-color: #ddd;
+}
+
+.trip-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trip-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #4a148c;
+    /* Primary theme accent */
+    color: #fff;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.trip-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.trip-card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #111;
+}
+
+.trip-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.trip-card-content p {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Data Table Layout */
+.table-section {
+    background-color: #fcfbfe;
+    border: 1px solid #e1dbe9;
+    padding: 40px 20px;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.table-section h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.table-intro {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Horizontal scrolling wrapper */
+.table-responsive-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    min-width: 600px;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.trips-table th {
+    background-color: #4a148c;
+    /* High contrast header background color */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.trips-table tbody tr:hover {
+    background-color: #f5f0ff;
+}
+
+.table-row-highlight {
+    background-color: #faf8ff;
+}
+
+/* Bottom Call to Action Section */
+.bottom-cta {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.bottom-cta p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cta-button-secondary {
+    display: inline-block;
+    background-color: #4a148c;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button-secondary:hover {
+    background-color: #380e6f;
 }
